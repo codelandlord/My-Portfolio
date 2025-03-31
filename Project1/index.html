@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive TODO App</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <button id="newTask">Add New Task</button>
+    <p class="title">This is my first project: Responsive TODO app (only front end)</p>
+    <div class="centered-container"></div>
+    <!-- Task Cards Container -->
+    <div class="container">
+        <div class="card todo">
+            <h2>To-Do</h2>
+            <p>Tasks yet to be started.</p>
+            <ul id="todolist">
+                <li class="task1">Task1</li>
+                <li class="task2">Task2</li>
+            </ul>
+        </div>
+        
+        <div class="card doing">
+            <h2>Doing</h2>
+            <p>Tasks in progress.</p>
+        </div>
+        
+        <div class="card overdue">
+            <h2>Overdue</h2>
+            <p>Tasks past their deadline.</p>
+        </div>
+        
+        <div class="card done">
+            <h2>Done</h2>
+            <p>Completed tasks.</p>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to your JS file -->
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    height: auto; /* Remove forced full height to allow natural flow */
+    text-align: center;
+}
+
+/* Title paragraph styling */
+.title {
+    margin-top: 10px; /* 10px space from the top */
+    margin-bottom: 20px; /* Spacing below the title */
+    font-size: 1.5rem; /* Adjust font size for better readability */
+    color: #555; /* Softer gray text */
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust width based on preference */
+    max-width: 1200px;
+}
+
+/* Card styling */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 22%; /* Adjust width for each card */
+}
+
+.card.todo {
+    background-color: yellow;
+}
+
+.card.doing {
+    background-color: blue;
+}
+
+.card.overdue {
+    background-color: red;
+}
+
+.card.done {
+    background-color: green;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Paragraph styling */
+p {
+    background-color: #fff; /* White background for text block */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card-like effect */
+    max-width: 600px; /* Limit the width */
+    margin: 20px;
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #555; /* Softer gray text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    p {
+        font-size: 1rem; /* Smaller text on mobile devices */
+        padding: 15px;
+    }
+}
+
+/* Ensure block-level behavior */
+div, p, h1 {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card ul li {
+    margin: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+#newTask{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: #007BFF;
+    background-color: aqua;
+    border-radius: 10%;
+    border-width: 3px;
+    border-color: #007BFF;
+    font-size: large;
+}

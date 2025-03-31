@@ -1,0 +1,18 @@
+MyNotes
+1. Set Up Your Project Folder
+2. Open the Folder in VS Code
+3. Create the Necessary Files
+4. Write Basic Code
+
+5. Install and Use Live Server
+Install the "Live Server" Extension:
+Go to the Extensions panel in VS Code (Ctrl+Shift+X or Cmd+Shift+X).
+Search for Live Server and click Install.
+Start Live Server:
+Right-click on index.html in the VS Code file explorer.
+Select Open with Live Server.
+Your project will open in your default browser, and any changes you make will refresh automatically.
+
+
+display: block;: This changes the <a> tags from inline to block-level elements, causing them to stack vertically.
+margin-bottom: 10px;: Adds space between the links so they don’t stick together.
